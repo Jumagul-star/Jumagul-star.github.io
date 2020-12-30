@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iFrame Test</title>
+    <script>
+      function resizeIframe(event) {
+        event.target.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px'
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page-header">
+      <h2>Смена номера телефона в оптима24</h2>
+    </div>
+    <iframe
+      id="idIframe"
+      name="Test"
+      src="http://127.0.0.1:8081/phone-change-form/"
+      frameborder="0"
+      height="2250"
+      width="100%"
+      allowfullscreen
+      scrolling="no"
+      onload="resizeIframe"
+    ></iframe>
+
+    <div>fddsf</div>
+  </body>
+</html>
